@@ -1,5 +1,5 @@
 // Grilla: guarda la app en el teléfono para que funcione sin internet
-const V='grilla-9945e00e24';
+const V='grilla-9d179930d3';
 const FILES=["./", "index.html", "manifest.webmanifest", "fonts/IBMPlexMono-Medium.ttf", "fonts/IBMPlexSans-Var.ttf", "fonts/Kalam-Bold.ttf", "fonts/Kalam-Regular.ttf", "icons/apple-touch-icon.png", "icons/icon-192.png", "icons/icon-512.png", "icons/maskable-512.png", "pdfjs/pdf.min.js", "pdfjs/pdf.worker.min.js", "vendor/abcjs-basic-min.js", "vendor/lame.min.js"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
