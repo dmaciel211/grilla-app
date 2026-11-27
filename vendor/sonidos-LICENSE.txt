@@ -1,0 +1,10 @@
+sonidos.js: muestras de piano, contrabajo y batería tomadas de FluidR3_GM.
+
+FluidR3_GM, de Frank Wen. Licencia Creative Commons Atribución 3.0 (CC BY 3.0):
+https://creativecommons.org/licenses/by/3.0/
+
+Pasadas a MP3 por el proyecto midi-js-soundfonts
+(https://github.com/gleitz/midi-js-soundfonts y https://github.com/paulrosen/midi-js-soundfonts),
+Copyright (c) 2012 Benjamin Gleitzman, licencia MIT.
+
+Grilla incluye un subconjunto de las notas, sin modificar, codificado en base64.
